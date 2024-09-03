@@ -1,1 +1,37 @@
-{% extends "base.html" %}
+{% extends "base.html" %} 
+{% load static %}
+{% block content1 %}  
+<div class="row my-5">  
+    <div class="col-12 d-flex justify-content-center align-items-center">
+    <div class="circular-image-container"> 
+       <img class="circular-image" src= "{% static 'images/image12.jpg'%}" alt="image">
+    </div> 
+</div>  
+
+<div class="col-12 text-center mt-3"> 
+    <h4 class="title">Hii, my name is</h4>  
+    <div class="name">
+    <h1>Aanchal Singh</h1> 
+    <h2>I am Software Developer</h2> 
+    </div> 
+</div> 
+
+<div class="col-12 text-center mt-3">   
+    <div class="col-12 d-flex justify-content-center align-items-center">
+   <a href="#" target="_blank" class="ms-3"> 
+    <img src="{% static 'images/linkedin.jpg'%}" alt="images/linkedin.jpg" width="55" height="55" class="social-links"> 
+   </a>  
+
+   <a href="#" target="_blank" class="ms-3"> 
+    <img src="{% static 'images/insta_logo.jpg'%}" alt="images/insta_logo.jpg" width="55" height="55" class="social-links"> 
+   </a> 
+
+   <a href=" https://github.com/Aanchal-kumari-R" target="_blank" class="ms-3"> 
+    <img src="{% static 'images/git_images.png'%}" alt="images/git_images.png" width="55" height="55" class="social-links"> 
+   </a> 
+</div>
+
+</div>
+</div>
+        
+{% endblock content1 %}
