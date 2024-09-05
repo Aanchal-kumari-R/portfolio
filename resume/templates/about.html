@@ -1,0 +1,78 @@
+{% extends "base.html" %} 
+{% load static %}
+{% block content1 %}  
+<div class="row my-5">   
+    <div class="col-4 d-flex justify-content-center align-items-center"> 
+        <img src = "{% static 'images/image12.jpg' %}" alt = "Image" class="about_image">
+    </div> 
+
+    <div class="col-7 text-left text-light">  
+        <h2>Hello!</h2>
+       <p class="fs-5"> I bring a diverse background encompassing roles such as a Full Stack Python Developer.  
+        I am a fresher.
+       </p>  
+
+       <p class="fs-5"> As a Full Stack Python Developer , I am dedicated to helping others learn Python and DRF while 
+        continuously improving my own programming skills. I have a strong foundation in Python and a deep understanding of 
+        its concepts , syntax and best practices.    
+
+       </p>
+
+    </div>
+     
+    <div class="row my-2"> 
+        <h2 class="text-center my-4" style="color:#4fffb0">My Tech Stack </h2>  
+        <div class="d-flex my-3 justify-content-around align-items-center">
+        <img src="{% static 'images/html.png' %}" 
+         width="68"  
+         height="68" 
+         alt="Html logo" 
+         class="img-fluid"> 
+
+         <img src="{% static 'images/css.png' %}" 
+         width="70"  
+         height="70" 
+         alt="Css logo" 
+         class="img-fluid"> 
+
+         <img src="{% static 'images/bootstrap_logo.png' %}" 
+         width="70"  
+         height="70" 
+         alt="Bootstrap logo" 
+         class="img-fluid"> 
+
+         <img src="{% static 'images/js_logo.png' %}" 
+         width="70"  
+         height="70" 
+         alt="JavaScript logo" 
+         class="img-fluid"> 
+
+         <img src="{% static 'images/python.png' %}" 
+         width="70"  
+         height="70" 
+         alt="Python logo" 
+         class="img-fluid"> 
+
+         <img src="{% static 'images/mysql_logo.png' %}" 
+         width="78"  
+         height="78" 
+         alt="Mysql logo" 
+         class="img-fluid"> 
+
+         <img src="{% static 'images/django.png' %}" 
+         width="70"  
+         height="70" 
+         alt="Django logo" 
+         class="img-fluid"> 
+
+         <img src="{% static 'images/drf.png' %}" 
+         width="60"  
+         height="60" 
+         alt="DRF logo" 
+         class="img-fluid"> 
+        </div>
+
+    </div>
+</div>
+        
+{% endblock content1 %}

@@ -52,4 +52,11 @@ body{
     justify-content: center; 
     align-items: center;
 
-}
+} 
+
+.about_image{ 
+    width: 250px; 
+    height: auto; 
+    display: block;
+} 
+
