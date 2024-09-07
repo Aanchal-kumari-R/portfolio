@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %} 
+ <div class="row my-3"> 
+  <div class="col-4 text-center my-5 text-light">  
+    <h1 class="mt-5 mb-3">Stay connected</h1> 
+    <h3 class="mb-3">aanchalkumari096@gmail.com</h3>
+    <div class="col-12 d-flex justify-content-center align-items-center">
+        <a href="#" target="_blank" class="ms-3"> 
+         <img src="{% static 'images/linkedin.jpg'%}" alt="images/linkedin.jpg" width="55" height="55" class="social-links"> 
+        </a>  
+     
+        <a href="#" target="_blank" class="ms-3"> 
+         <img src="{% static 'images/insta_logo.jpg'%}" alt="images/insta_logo.jpg" width="55" height="55" class="social-links"> 
+        </a> 
+     
+        <a href=" https://github.com/Aanchal-kumari-R" target="_blank" class="ms-3"> 
+         <img src="{% static 'images/git_images.png'%}" alt="images/git_images.png" width="55" height="55" class="social-links"> 
+        </a> 
+     </div> 
+    </div>
+       
+     <div class="col-5 offset-1 mt-5">  
+        <div class="container form-container text-light">
+        <form method="post"> {% csrf_token %}
+            <div class="form-group m-3"> 
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group m-3">
+              <label for="password">Password:</label>
+              <input type="text" class="form-control" id="password" name="password">
+            </div> 
+            <div class="form-group m-3">
+                <label for="phone">Phone no.</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+              </div> 
+              <div class="form-group m-3">
+                <label for="message">Message:</label>
+                <textarea type="text" class="form-control" id="message" rows="2" name="text"></textarea> 
+              </div> 
+
+            <button type="submit" class="btn btn-primary ms-3">Submit</button>
+        </form>
+     
+      </div>
+    </div>
+  
+ </div>    
+
+ 
+{% endblock content1 %}

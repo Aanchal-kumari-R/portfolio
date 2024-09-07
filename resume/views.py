@@ -1,4 +1,5 @@
-from django.shortcuts import render 
+from django.shortcuts import render  
+from .models import Contact 
 
 
 # Create your views here. 
@@ -36,7 +37,41 @@ def projects(request):
     return render(request,"projects.html",{"projects_show":projects_show}) 
 
 def experience(request):  
-  
+     experience = [ 
+         { 
+            "Company" : "ABC", 
+            "Position": "Python Developer"
+         }, 
 
-    return render(request,"experience.html")
+         { 
+            "Company":"ABC2", 
+            "Position":"Python Developer"
+         }, 
 
+         { 
+            "Company":"ABC3", 
+             "Position":"Python Developer"
+         }
+     ]
+
+     return render(request,"experience.html",{"experience":experience}) 
+
+def certificate(request): 
+    return render(request,"certificate.html")
+
+def contact(request):   
+    if request.method == "POST":  
+        name = request.POST.get('name','') 
+        password = request.POST.get('password','')   
+        phone = request.POST.get('phone','')
+        text = request.POST.get('text','') 
+        contact = Contact(name=name,password=password,phone=phone,text=text) 
+        contact.save() 
+        
+
+
+    return render(request,"contact.html")
+
+
+def resume(request): 
+    return render(request,"resume.html")
